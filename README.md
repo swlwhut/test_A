@@ -1,6 +1,30 @@
 ## Faster-Rcnn：Two-Stage目标检测模型在Pytorch当中的实现
 ---
+参考代码：
+https://github.com/bubbliiiing/faster-rcnn-pytorch
+本人是基于该代码的二次开发
+主要步骤分两步：
+1、先识别图片上有没有鸟类，识别到之后将预测框圈出的部分截图到img_crop文件夹里
+2、遍历识别img_crop文件夹里所有图片中鸟类的飞行状态，识别后将结果保存到img_out文件夹里
 
+基于公共数据集VOC2007，我重新添加了上百张鸟类图片随机替换掉了原来的数据集里的图片，并且重新做了标注，训练后的权值文件如下：
+链接：https://pan.baidu.com/s/1mF_srK2B4omZZPrpuDO5dw?pwd=os5g 
+提取码：os5g 
+
+第二步里我自己做了一个鸟类飞行状态的数据集，总共约1000张图片，标注时只区分了两钟状态：resting_bird和flying_bird
+数据集和训练后的权值文件如下：
+数据集：
+链接：https://pan.baidu.com/s/1dAQjBc8-XfvEHruH83OJ6A?pwd=2wl9 
+提取码：2wl9 
+权值文件：
+链接：https://pan.baidu.com/s/1T9_xJALeHzg3rr8tErwkPQ?pwd=ibyl 
+提取码：ibyl 
+
+
+
+
+以下是原作者内容
+/****************************************************************
 **2021年10月14日更新：**   
 **进行了大幅度的更新，对代码的模块进行修改，加了大量注释。**   
 
