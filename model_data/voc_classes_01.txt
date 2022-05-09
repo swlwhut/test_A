@@ -1,0 +1,3 @@
+flying_bird
+resting_bird
+no_bird
